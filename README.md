@@ -25,24 +25,9 @@ Columns: 12
 
 Memory size: ~91 MB
 
-Missing values: None (clean dataset)
 
-🔢 Feature Description
-Feature	Description
-line_of_code	Number of lines in the program
-cyclomatic_complexity	Logical complexity of the code
-unused_imports	Count of unused imports
-uses_bubble_sort	Whether bubble sort is used (0/1)
-uses_linear_search	Whether linear search is used (0/1)
-has_redundant_loops	Presence of unnecessary loops
-cpu_usage_pct	CPU usage percentage
-memory_usage_mb	Memory consumed (MB)
-runtime_sec	Execution time (seconds)
-energy_consumed_kwh	Energy consumption
-carbon_emissions_g	Carbon emissions (grams)
-is_efficient	Target label (1 = efficient, 0 = inefficient)
-🔍 EDA Steps Performed
-1️⃣ Data Validation
+**🔍 EDA Steps Performed
+1️⃣ Data Validation**
 
 Checked data types and structure
 
@@ -50,7 +35,7 @@ Verified zero missing values
 
 Confirmed numerical consistency
 
-2️⃣ Correlation Analysis
+**2️⃣ Correlation Analysis**
 
 Heatmap used to identify which features most strongly influence carbon emissions
 
@@ -63,8 +48,8 @@ Runtime
 Memory usage
 
 Cyclomatic complexity
-
-3️⃣ Algorithm Efficiency Analysis
+**
+3️⃣ Algorithm Efficiency Analysis**
 
 Compared bubble sort vs optimized algorithms
 
@@ -72,8 +57,8 @@ Used log-scale boxplots to handle extreme emission values
 
 Bubble sort shows significantly higher emissions
 
-4️⃣ Target Variable Distribution
-
+**4️⃣ Target Variable Distribution
+**
 Verified balance between:
 
 Efficient code (1)
@@ -82,14 +67,14 @@ Inefficient code (0)
 
 Dataset is suitable for supervised ML training
 
-5️⃣ Resource Usage Exploration
-
+**5️⃣ Resource Usage Exploration
+**
 CPU usage distribution analyzed for noise spikes
 
 Memory vs emissions scatter plots show clear separation between efficient and inefficient code
 
-6️⃣ AST Feature Insight
-
+**6️⃣ AST Feature Insight
+**
 Regression analysis between:
 
 Cyclomatic complexity
@@ -120,8 +105,8 @@ cpu_usage_pct
 memory_usage_mb
 runtime_sec
 
-🛠️ Technologies Used
-
+**🛠️ Technologies Used
+**
 Python
 
 Pandas – data handling
@@ -132,8 +117,8 @@ Seaborn – statistical plots
 
 Google Colab – execution environment
 
-📈 Key Insights
-
+**📈 Key Insights
+**
 Inefficient algorithms dramatically increase emissions
 
 Cyclomatic complexity is a strong predictor of carbon footprint
@@ -142,8 +127,8 @@ Resource-heavy code (CPU & memory) correlates with higher emissions
 
 Dataset is ML-ready with no missing values
 
-🚀 Next Steps
-
+**🚀 Next Steps
+**
 Feature scaling & normalization
 
 Train ML models (Random Forest, XGBoost, Neural Networks)
